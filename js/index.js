@@ -39,9 +39,14 @@ function setCourseHtml(courseIn){
   return `<em>${courseIn.name} ${courseIn.code} ${courseIn.instructor} ${courseIn.start.term} ${courseIn.start.year} ${courseIn.weeks} ${courseIn.breaks} ${courseIn.duration}</em>`;
 }
 
-function getCourseAsHtmlString(){
+// function setCourseHtml(courseIn){
+//   console.log(`Course name ${courseIn.name} code ${courseIn.code} instructor ${courseIn.instructor} term ${courseIn.start.term} year ${courseIn.start.year} week ${courseIn.weeks} break ${courseIn.breaks} duration ${courseIn.duration}`);
+// }
+
+
+// function getCourseAsHtmlString(){
   
-}
+// }
 
 
 /************* EXECUTABLE *************/
@@ -53,7 +58,12 @@ function getCourseAsHtmlString(){
 // document.getElementById(`start`).innerHTML = `${course.start.term} ${course.start.year}`;
 // document.getElementById(`weeks`).innerHTML = course.weeks;
 // document.getElementById(`duration`).innerHTML = getDurationFromMinutes(course.duration);
-document.getElementById(`course`).innerHTML += setCourseHtml(allCourses);
+
+
+
+document.getElementById(`course`).innerHTML += setCourseHtml(allCourses[0]);
+document.getElementById(`course`).innerHTML += setCourseHtml(allCourses[1]);
+
 
 
 
